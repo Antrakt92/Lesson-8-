@@ -1,0 +1,197 @@
+/* ------------ :hover ------------ */
+.block-hover {
+   background-color: antiquewhite;
+   display: inline-block;
+   padding: 20px;
+}
+
+.item-hover:hover {
+   color: white;
+}
+.block-hover:hover .item-hover {
+   color: green;
+}
+
+/* ------------ :visited ------------ */
+
+.block-visited {
+   padding: 20px;
+   display: inline-block;
+   background-color: rgb(0, 255, 255);
+}
+.item-visited:visited {
+   color: rgba(92, 79, 79, 0.447);
+}
+
+/* ------------ :active ------------ */
+
+.block-active {
+   padding: 20px 30px;
+   display: inline-block;
+   background-color: brown;
+   border-radius: 10%;
+   box-shadow: 0px 6px 0px rgb(55, 55, 48);
+   color:aliceblue;
+   position: relative;
+}
+.block-active:hover {
+   color:rgb(171, 175, 180)
+}
+.block-active:active {
+   box-shadow: 0px 4px 0px rgb(55, 55, 48);
+   top: 4px;
+}
+
+/* ------------ :focus ------------ */
+
+.block-focus {
+   padding: 20px;
+   display: inline-block;
+   background-color: aqua;
+}
+.item-focus:focus {
+   outline: 2px solid red;
+   color:azure;
+}
+
+/* ------------ :target ------------ */
+
+.block {
+   margin: 30px 0 35px 0;
+   display: inline-block;
+}
+.block-target {
+   padding: 20px 30px;
+   /*display: inline-block;*/
+   background-color: brown;
+   border-radius: 10%;
+   box-shadow: 0px 6px 0px rgb(55, 55, 48);
+   color:aliceblue;
+   position: relative;
+   max-width: 110px;
+   
+}
+.block-target:hover {
+   color:rgb(171, 175, 180)
+}
+.block-target:active {
+   box-shadow: 0px 4px 0px rgb(55, 55, 48);
+   top: 4px;
+}
+.target {
+   margin: 30px 0 0 0;
+   display: none;
+}
+.target:target {
+   display: inline-block;
+}
+/* ------------ :first-child ------------ */
+
+.block-child {
+   border: solid red;
+   display: inline-block;
+   padding: 3px;
+   text-align: center;
+   
+}
+.text  {
+   display: inline-block;
+   color:rgb(40, 196, 61);
+   font-size: small;
+   vertical-align: middle;
+}
+.first-child p:first-child {
+   color: red;
+}
+/* ------------ :last-child ------------ */
+
+.last-child p:last-child {
+   color: red;
+}
+/* ------------ :last-of-type ------------ */
+
+.last-of-type p:last-of-type {
+   color: red;
+}
+/* ------------ :first-of-type ------------ */
+
+.first-of-type p:first-of-type {
+   color: red;
+}
+
+/* ------------ :nth-child( ) ------------ */
+
+.block-nth-child {
+   border: solid red ;
+   padding: 3px;
+   display: inline-block;
+   margin: 10px 0;
+   color: rgb(40, 196, 61);
+   font-size: small;
+}
+.odd, .even, .number {
+   display: inline-block;
+}
+.odd .lorem:nth-child(odd) {
+   color: red;
+}
+.even .lorem:nth-child(even) {
+   color: red;
+}
+.number .lorem:nth-child(3) {
+   color: red;
+}
+/* ------------ :not(:last-child)} ------------ */
+
+.lorem-margin {
+   font-size: small;
+   color:rgb(40, 196, 61)
+}
+.lorem-margin:not(:last-child) {
+   margin: 3px 0;
+}
+span {
+   color: red;
+}
+/* ------------ :after / :before ------------ */
+
+h1::after {
+   content: "";
+   display: block;
+   width: 50%;
+   height: 2px;
+   background-color: green;
+}
+.h1 {
+   display: inline-block;
+}
+/* ------------ :after / :before ------------ */
+.list-ul li {
+   padding: 0 0 0 30px; 
+}
+.list-ul li:before {
+   content: "";
+   display: inline-block;
+   width: 10px;
+   height: 10px;
+   background-color: red;
+   border-radius: 50%;
+   margin: 4px 10px 0 -20px;
+   vertical-align: top;
+}
+/* ------------ :after / :before ------------ */
+h1 * {
+   margin-top: 10px;
+}
+.list-ol li {
+   padding: 10px 0 0 30px;
+}
+.list-ol li::before {
+   counter-increment: section;
+   content: counter(section) ")";
+   display: inline-block;  
+   vertical-align: top;
+   color: red;
+   margin: 0px 10px 0 -20px;
+   
+}

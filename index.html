@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <link rel="stylesheet" href="null.css">
+   <link rel="stylesheet" href="style.css">
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Lesson 8</title>
+</head>
+
+<body>
+   <div class="wrapper">
+      <header class="header"></header>
+      <main class="main">
+         <!-------------- :hover -------------->
+         <div class="block-hover">
+            <a class="item-hover" href="google.com">:hover element</a>
+         </div>
+         <!-------------- :visited -------------->
+         <div class="block-visited">
+            <a class="item-visited" href="https://www.facebook.com/">:visited</a>
+         </div>
+         <!-------------- :active -------------->
+         <div class="block-active">:active</div>
+         <!-------------- :focus -------------->
+         <div class="block-focus">
+            <a class="item-focus" href="https://www.facebook.com/">:focus</a>
+         </div>
+         <!-------------- :target -------------->
+         <div class="block">
+            <a href="#target" class="block-target">:target</a>
+         </div>
+         <div id="target" class="target">hidden text</div>
+         <!-------------- :first child -------------->
+         <div>
+            <div class="block-child">
+               <div class="text first-child">
+                  <p>first-child</p>
+                  <p>first-child</p>
+                  <p>first-child</p>
+               </div>
+
+               <!-------------- :last-child -------------->
+               <div class="text last-child">
+                  <p>last-child</p>
+                  <p>last-child</p>
+                  <p>last-child</p>
+               </div>
+               <!-------------- :last-of-type -------------->
+               <div class="text last-of-type">
+                  <p>last-of-type</p>
+                  <p>last-of-type</p>
+                  <p>last-of-type</p>
+                  <div>div</div>
+               </div>
+               <!-------------- :first-of-type -------------->
+               <div class="text first-of-type">
+                  <div>div</div>
+                  <p>first-of-type</p>
+                  <p>first-of-type</p>
+                  <p>first-of-type</p>
+               </div>
+            </div>
+         </div>
+         <!-------------- :nth-child( ) -------------->
+         <div class="block-nth-child">
+            <div class="nth-child odd">
+               <p class="lorem">:nth-child(odd)</p>
+               <p class="lorem">:nth-child(odd)</p>
+               <p class="lorem">:nth-child(odd)</p>
+               <p class="lorem">:nth-child(odd)</p>
+            </div>
+            <div class="nth-child even">
+               <p class="lorem">:nth-child(even)</p>
+               <p class="lorem">:nth-child(even)</p>
+               <p class="lorem">:nth-child(even)</p>
+               <p class="lorem">:nth-child(even)</p>
+            </div>
+            <div class="nth-child number">
+               <p class="lorem">:nth-child(number)</p>
+               <p class="lorem">:nth-child(number)</p>
+               <p class="lorem">:nth-child(number)</p>
+               <p class="lorem">:nth-child(number)</p>
+            </div>
+         </div>
+         <!-------------- :not(:last-child)} -------------->
+         <div class="lorem-margin">.lorem-margin:not(:last-child) {
+            margin: 3px 0;</div>
+         <div class="lorem-margin">.lorem-margin:not(:last-child) {
+            margin: 3px 0;</div>
+         <div class="lorem-margin">.lorem-margin:not(:last-child) {
+            margin: 3px 0;</div>
+         <!-------------- :after / :before -------------->
+         <div class="h1">
+            <h1>Text</h1>
+         </div>
+         <div>
+            <ul class="list-ul">
+               <li>Я пунк списка</li>
+               <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat at repudiandae nemo molestias sed
+                  et esse delectus temporibus illo, nam beatae quia possimus nulla molestiae accusamus consequuntur
+                  rerum aliquam dolor.</li>
+               <li>Я пунк списка</li>
+               <li>Я пунк списка</li>
+            </ul>
+         </div>
+         <ol class="list-ol">
+            <li>Я пунк списка</li>
+            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat at repudiandae nemo molestias sed
+               et esse delectus temporibus illo, nam beatae quia possimus nulla molestiae accusamus consequuntur
+               rerum aliquam dolor.</li>
+            <li>Я пунк списка</li>
+            <li>Я пунк списка</li>
+         </ol>
+   </div>
+   </main>
+   <footer class="footer"></footer>
+   </div>
+</body>
+
+</html>
